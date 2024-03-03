@@ -1,0 +1,18 @@
+#include <stdio.h>    
+     
+int main()    
+{        
+    int arr[] = {1,1,2,9,8,6,5,5,2,2};     
+            
+    int length = sizeof(arr)/sizeof(arr[0]);    
+        printf("192373024_ Akhilkumar\n");
+    printf("Duplicate elements in given array: \n");    
+     
+    for(int i = 0; i < length; i++) {    
+        for(int j = i + 1; j < length; j++) {    
+            if(arr[i] == arr[j])    
+                printf("%d\n", arr[j]);    
+        }    
+    }    
+    return 0;    
+}
